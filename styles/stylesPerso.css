@@ -1,0 +1,10 @@
+.contenedor{
+display: flex;
+}
+.div1{
+    width: 10%;
+}
+div2{
+    width: 90%;
+    margin-left: 10px;
+}

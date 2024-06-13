@@ -1,0 +1,64 @@
+body {
+    margin: 5% 15%;
+    font-family: cursive;
+    box-sizing: border-box;
+
+}
+header>h1,.cabecera{
+    border-radius: 10px;
+}
+.cabecera{
+    background-image: url(../assets/design1_image1.jpg);
+    background-size: 100% 100%;
+    padding: 6%;
+    
+    border-radius: 10px;
+    text-shadow: 10px 10px 10px rgb(255, 255, 255);
+}
+
+.nav {
+    display: flex;
+}
+header>h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.div1 {
+    width: 10%;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    line-height: 100px;
+
+}
+
+div2 {
+
+    margin-left: 10px;
+}
+
+h2 {
+    height: 10px;
+}
+#logo{
+    
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    position: absolute; /* Posiciona la imagen absolutamente respecto al contenedor */
+    top: 200px; /* Ajusta este valor para mover la imagen hacia arriba */
+    right: 50px; /* Ajusta este valor para mover la imagen a la derecha */
+    z-index: 10; /* Asegura que la imagen esté por encima del h1 */
+     
+}
+header{
+    position: relative;
+}
+footer{
+    text-align: center;
+}
+.articles p{
+    margin-top: 28px;
+}
