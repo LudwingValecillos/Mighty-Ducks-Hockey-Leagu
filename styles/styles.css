@@ -3,17 +3,18 @@ body {
   font-family: cursive;
 }
 #cabecera {
+  display: flex;
   background-image: url(../assets/design1_image1.jpg);
   padding: 50px;
   background-size: 100% 50vh;
+  justify-content: center;
+   border-radius: 20px;
 }
 h1 {
-  position: relative;
   top: -50px;
 }
 #logo {
   width: 150px;
-  position: absolute;
   top: 19%;
   left: 75%;
 }
@@ -23,39 +24,39 @@ h2 {
   text-align: center;
   padding: 5px;
 }
+
 main {
-  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  border: 5px solid black;
+  width: 100%;
+  height: 100%;
+  
 }
+ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+li a {
+  margin-bottom: 80px;
+  text-decoration: none;
+  display: block;
+}
+
 li {
   list-style: none;
 }
 
-nav {
-  display: inline-block;
-  width: 20%;
+.menu {
+  flex-grow: 1;
+  flex-basis: 20%;
 }
-
 .articles {
-  display: inline-block;
-
-  width: 79%;
-}
-article {
-  display: block;
-}
-li a {
-  margin-bottom: 80px;
-  position: relative;
-  text-decoration: none;
-  display: block;
-}
-footer {
-  text-align: center;
-}
-p {
-  text-indent: 50px;
-  margin-top: 1px;
-}
-h3 {
-  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  flex-basis: 80%;
+  justify-content: center;
 }
