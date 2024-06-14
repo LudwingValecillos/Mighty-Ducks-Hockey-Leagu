@@ -1,64 +1,61 @@
 body {
-    margin: 5% 15%;
-    font-family: cursive;
-    box-sizing: border-box;
-
+  margin: 20px 200px;
+  font-family: cursive;
 }
-header>h1,.cabecera{
-    border-radius: 10px;
+#cabecera {
+  background-image: url(../assets/design1_image1.jpg);
+  padding: 50px;
+  background-size: 100% 50vh;
 }
-.cabecera{
-    background-image: url(../assets/design1_image1.jpg);
-    background-size: 100% 100%;
-    padding: 6%;
-    
-    border-radius: 10px;
-    text-shadow: 10px 10px 10px rgb(255, 255, 255);
+h1 {
+  position: relative;
+  top: -50px;
 }
-
-.nav {
-    display: flex;
+#logo {
+  width: 150px;
+  position: absolute;
+  top: 19%;
+  left: 75%;
 }
-header>h1{
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.div1 {
-    width: 10%;
-    margin-right: 20px;
-}
-
-.nav a {
-    text-decoration: none;
-    line-height: 100px;
-
-}
-
-div2 {
-
-    margin-left: 10px;
-}
-
 h2 {
-    height: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
-#logo{
-    
-    width: 150px; /* Ajusta el tamaño de la imagen */
-    position: absolute; /* Posiciona la imagen absolutamente respecto al contenedor */
-    top: 200px; /* Ajusta este valor para mover la imagen hacia arriba */
-    right: 50px; /* Ajusta este valor para mover la imagen a la derecha */
-    z-index: 10; /* Asegura que la imagen esté por encima del h1 */
-     
+main {
+  margin-top: 10px;
 }
-header{
-    position: relative;
+li {
+  list-style: none;
 }
-footer{
-    text-align: center;
+
+nav {
+  display: inline-block;
+  width: 20%;
 }
-.articles p{
-    margin-top: 28px;
+
+.articles {
+  display: inline-block;
+
+  width: 79%;
+}
+article {
+  display: block;
+}
+li a {
+  margin-bottom: 80px;
+  position: relative;
+  text-decoration: none;
+  display: block;
+}
+footer {
+  text-align: center;
+}
+p {
+  text-indent: 50px;
+  margin-top: 1px;
+}
+h3 {
+  margin-bottom: 0px;
 }
