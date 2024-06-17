@@ -1,19 +1,33 @@
 body {
   margin: 20px 200px;
-  font-family: cursive;
+  background-color: rgba(240, 128, 128, 0.158)
 }
 #cabecera {
   display: flex;
   background-image: url(../assets/design1_image1.jpg);
-  padding: 50px;
   background-size: 100% 50vh;
+  align-items: center;
   justify-content: center;
-   border-radius: 20px;
+  border-radius: 50px 50px 0 0;
+  border: 5px solid black;
+  
 }
 h1 {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+  text-shadow: 4px 4px 1px rgba(255, 25, 4, 0.5);
   top: -50px;
+  font-size: 2.5em;
+  margin: 0;
+  align-items: center;
 }
 #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   top: 19%;
   left: 75%;
@@ -23,40 +37,73 @@ h2 {
   color: white;
   text-align: center;
   padding: 5px;
+  border-radius: 0px 0px 50px 50px;
 }
 
 main {
-  display: flex;
-  gap: 20px;
-  border: 5px solid black;
   width: 100%;
-  height: 100%;
+  height: 450px;
   
 }
-ul {
+.pages{
+display: flex;
+border-radius: 50px 50px 0px 0px;
+background-color: black;
+}
+nav>a{
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-li a {
-  margin-bottom: 80px;
-  text-decoration: none;
-  display: block;
-}
 
-li {
-  list-style: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;  
+  transition: all 0.5s;
 }
-
-.menu {
-  flex-grow: 1;
-  flex-basis: 20%;
+nav>a:hover{
+  color: yellow;
+  font-size: 200%;
 }
+a[href="#"]{
+  color: yellow;
+}
+a[href="#"]:hover{
+  color: red;
+  font-size: 200%;
+}
+  
 .articles {
-  display: flex;
-  flex-direction: column;
   flex-grow: 2;
   flex-basis: 80%;
   justify-content: center;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid black;
+  padding-left: 20px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+article:hover{
+  transform: scale(1.1);
+  background-color: rgba(240, 128, 128, 0.37);
+}
+footer{
+  margin-top: 8%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  border-radius: 0px 0px 50px 50px;
+}
+footer p:hover{
+  color: yellow;
+}
+h2:hover{
+  color: yellow;
 }
