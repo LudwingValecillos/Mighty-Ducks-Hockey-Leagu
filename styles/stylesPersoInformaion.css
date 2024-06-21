@@ -112,7 +112,7 @@ td img{
   margin-left: 10px;
 }
 
-@media (width <= 425px) {
+@media (width <= 768px) {
   article h3{
     text-align: center;
   }
