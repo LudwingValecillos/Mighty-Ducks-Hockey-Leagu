@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   margin: 20px 200px;
+  
 }
 #cabecera{
   background-image: url(../assets/design1_image2.jpg);
@@ -64,8 +66,9 @@ article{
 }
 footer{
   text-align: center;
-  
+  position: fixed;
 }
+
 
 @media (width <= 425px) {
   body{

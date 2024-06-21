@@ -1,3 +1,4 @@
+/* Estilos existentes */
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,14 @@
 }
 
 body {
-  margin: 20px 200px;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px 100px;
   background-color: rgba(240, 128, 128, 0.158);
 }
+
 #cabecera {
   display: flex;
   background-image: url(../assets/design1_image1.jpg);
@@ -18,6 +24,7 @@ body {
   border: 5px solid black;
   margin-bottom: 5px;
 }
+
 h1 {
   display: flex;
   align-items: center;
@@ -29,6 +36,7 @@ h1 {
   margin: 0;
   align-items: center;
 }
+
 #logo {
   display: flex;
   align-items: center;
@@ -37,6 +45,7 @@ h1 {
   top: 19%;
   left: 75%;
 }
+
 h2 {
   background-color: black;
   color: white;
@@ -47,14 +56,21 @@ h2 {
 
 main {
   margin-top: 10px;
+  flex: 1;
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .pages {
   display: flex;
   border-radius: 50px 50px 0px 0px;
   background-color: black;
+  width: 100%;
+  height: 50px;
 }
+
 nav > a {
   display: flex;
   align-items: center;
@@ -66,6 +82,7 @@ nav > a {
   text-decoration: none;
   transition: all 0.5s;
 }
+
 nav > a:hover {
   color: yellow;
   font-size: 200%;
@@ -76,16 +93,28 @@ a[href="#"]:hover {
   font-size: 200%;
 }
 
-.articles article {
+.articles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+article {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
+  padding: 20px;
+}
+
+.articles article {
+  margin: 10px 0;
   border: 2px solid black;
-  padding-left: 20px;
   border-radius: 50px;
   transition: all 0.5s;
 }
+
 .articles article:hover {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -93,13 +122,17 @@ a[href="#"]:hover {
   transform: scale(1.1);
   background-color: rgba(240, 128, 128, 0.37);
 }
+
 footer {
   background-color: black;
   color: white;
   padding: 1px;
   border-radius: 0px 0px 50px 50px;
   text-align: center;
-}
+  height: 50px;
+
+  }
+
 footer p:hover,
 h2:hover,
 a[href="#"] {
@@ -111,20 +144,41 @@ p {
   margin: 2px;
   padding: 2px;
 }
+
 .contact p a {
   color: white;
 }
-.contact{
+
+.contact {
   display: flex;
   justify-content: space-around;
   width: 100%;
   text-decoration: none;
   color: white;
 }
+article p {
+  font-size: 20px;
 
-@media(width <= 768px) {
+}
+.contacto{
+  text-align: center;
+}
+p + p{
+  text-align: center;
+}
+
+.articles img{
+  margin: 0px 25%;
+  width: 50%;
+  height: 2%;
+  border-radius: 30px;
+}
+
+
+@media (max-width: 768px) {
   body {
     margin: 5px 30px;
+    min-height: 98vh;
   }
   
   main,
@@ -132,19 +186,22 @@ p {
     width: 100%;
     margin-top: 2.5px;
   }
+
   #logo {
     width: 19%;
   }
+
   h1 {
     width: 79%;
     font-size: 30px;
     text-align: center;
-    
   }
+
   #cabecera {
     margin-bottom: 2.5px;
     background-position: center -100px;
   }
+
   .pages {
     align-items: center;
     flex-direction: column;
@@ -158,25 +215,40 @@ p {
   }
 
   article p {
-    font-size: 12px;
     padding: 9px;
   }
+
   footer {
     font-size: 10px;
-    
+  }
+  .articles img{
+    margin: 0px 10%;
+    width: 80%;
+    height: 200px;
+  }
+  .articles{
+    margin-top: 0px;
   }
 }
 
-@media ( width <= 425px) {
+@media (max-width: 425px) {
   body {
     margin: 5px 8px;
   }
-  
+  .articles p{
+    padding: 2px;
+  }
+
   h1 {
     width: 79%;
     font-size: 20px;
     text-align: center;
   }
-
+  .articles p{
+    font-size: 13px;
+  }
+  article{
+    margin: 5px;
+  }
   
 }

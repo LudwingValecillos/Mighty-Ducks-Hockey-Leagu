@@ -116,6 +116,10 @@ input[name="grade"]{
     input[name="streetAddress"]{
         width: 60%;
     }
+    input[name="parent"]{
+        width: 59%;
+        margin: 10px 0px;
+    }
    
 }
 
