@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +7,6 @@
 body {
   margin: 20px 200px;
   background-color: rgba(240, 128, 128, 0.158);
-  
 }
 #cabecera {
   display: flex;
@@ -20,7 +19,6 @@ body {
   margin-bottom: 5px;
 }
 h1 {
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,36 +49,34 @@ main {
   margin-top: 10px;
   width: 100%;
   height: 100%;
-  
 }
-.pages{
-display: flex;
-border-radius: 50px 50px 0px 0px;
-background-color: black;
-}
-nav>a{
+.pages {
   display: flex;
-
+  border-radius: 50px 50px 0px 0px;
+  background-color: black;
+}
+nav > a {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 50px;
   color: white;
   font-size: 20px;
-  text-decoration: none;  
+  text-decoration: none;
   transition: all 0.5s;
 }
-nav>a:hover{
+nav > a:hover {
   color: yellow;
   font-size: 200%;
 }
 
-a[href="#"]:hover{
+a[href="#"]:hover {
   color: red;
   font-size: 200%;
 }
-  
-article{
+
+.articles article {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,30 +85,74 @@ article{
   padding-left: 20px;
   border-radius: 50px;
   transition: all 0.5s;
-  
 }
-article:hover{
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+.articles article:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   transform: scale(1.1);
   background-color: rgba(240, 128, 128, 0.37);
 }
-footer{
+footer {
   background-color: black;
   color: white;
   padding: 1px;
   border-radius: 0px 0px 50px 50px;
-  padding: 20px;
-  height: 50px;
   text-align: center;
 }
-footer p:hover , h2:hover, a[href="#"]{
+footer p:hover,
+h2:hover,
+a[href="#"] {
   color: yellow;
 }
 
-h3 , p{
-  margin:2px;
+h3,
+p {
+  margin: 2px;
   padding: 2px;
 }
+p a {
+  color: white;
+}
+@media (width <= 425px) {
+  body {
+    margin: 5px 8px;
+  }
+  main,
+  footer {
+    width: 100%;
+    margin-top: 2.5px;
+  }
+  #logo {
+    width: 19%;
+  }
+  h1 {
+    width: 79%;
+    font-size: 20px;
+    text-align: center;
+  }
+  #cabecera {
+    margin-bottom: 2.5px;
+  }
+  .pages {
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+  }
 
+  nav > a {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  article p {
+    font-size: 12px;
+    padding: 9px;
+  }
+  footer {
+    font-size: 10px;
+    
+  }
+  
+}

@@ -1,0 +1,68 @@
+
+fieldset{
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+}
+.information{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="radio"]{
+    font-size: 500px;
+}
+.division{
+    width: 100%;
+    display: flex;
+}
+input[type="text"], input[name="birthDate"]{
+    width: 35%;
+}
+div, label{
+    padding: 3px;
+}
+
+input[name="preSchool"],h4{
+    margin-left: 20px;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+input[name="parent"]{
+    width: 80%;
+    margin: 10px 0px;
+}
+.closestSchool{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 89px;
+    width: 50%;
+}
+  
+
+@media (width <= 425px) {
+    form{
+        width: 100%;
+        font-size: 12px;
+    }
+    input[name="preSchool"],h4{
+        margin-left: 2%;
+    }
+    span{
+        font-size: 12px;
+    }
+    input[type="text"], input[name="birthDate"]{
+        width: 20%;
+        height: 20px;
+    }
+    input[type="submit"]{
+        
+        width: 20%;
+        height: 20px;
+        margin: 10px 40px;
+
+    }
+}
+

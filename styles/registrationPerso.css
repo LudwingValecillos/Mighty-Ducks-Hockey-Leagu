@@ -1,0 +1,102 @@
+
+fieldset{
+    margin-top: 10px;
+    padding: 5px;
+    -webkit-box-shadow: 22px 3px 20px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 22px 3px 20px -11px rgba(0,0,0,0.75);
+box-shadow: 22px 3px 20px -11px rgba(0,0,0,0.75);
+}
+.information{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="radio"]{
+    font-size: 500px;
+}
+.division{
+    width: 100%;
+    display: flex;
+}
+input[type="text"], input[name="birthDate"]{
+    width: 35%;
+}
+input[name="streetAddress"]{
+    width: 80%;
+}
+div, label{
+    padding: 3px;
+}
+.gender{
+    display: flex;
+}
+input[name="preSchool"],h4{
+    margin-left: 20px;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+input[name="parent"]{
+    width: 80%;
+    margin: 10px 0px;
+}
+.closestSchool{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 89px;
+    width: 50%;
+}
+input[type="submit"]{
+    width: 20%;
+    height: 20px;
+    margin: 10px 40px;
+    
+    
+}
+input[name="grade"]{
+    margin-left: 10px;
+}
+
+
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+.summit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (width <= 425px) {
+    form{
+        width: 100%;
+        font-size: 12px;
+    }
+    input[name="preSchool"],h4{
+        margin-left: 2%;
+    }
+    
+    span{
+        font-size: 12px;
+    }
+    input[type="text"], input[name="birthDate"]{
+        width: 20%;
+        height: 20px;
+    }
+    input[type="submit"]{
+        
+        width: 20%;
+        height: 20px;
+        margin: 10px 40px;
+
+    }
+}
+

@@ -6,15 +6,20 @@
 body{
   margin: 20px 200px;
 }
-h1{
+#cabecera{
   background-image: url(../assets/design1_image2.jpg);
+  background-size: cover;
+  background-position: center -100px;
   height: 150px;
   width: 100%;
+}
+#cabecera{
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -100px;
 }
-h2{
+header h2{
   margin-top: 5px;
   padding: 5px;
   text-align: center;
@@ -42,7 +47,11 @@ nav{
   width: 20%;
   padding: 5px;
   min-height: 340px;
-  
+  min-width: 140px;
+}
+a[href="#"]{
+  text-decoration: none;
+  color: black;
 }
 .articles{
   display: flex;
@@ -53,13 +62,53 @@ nav{
 article{
   padding: 10px;
 }
-dt{
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: bold;
+footer{
+  text-align: center;
+  
 }
-a[href="#"]{
-  text-decoration: none;
-  color: black;
+
+@media (width <= 425px) {
+  body{
+    margin: 5px 2px;
+
+  }
+  #cabecera{
+    height: 40px;
+    background-position: center -20px;
+    }
+    #logo{
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      right: 1%;
+      top: 3%;
+    }
+  
+  #cabecera{
+    
+    text-align: center;
+    font-size: 10px;
+  text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.5);
+  }
+  main{
+    flex-wrap: wrap;
+  }
+  .pages{
+    width: 100%;
+    padding: 5px;
+    height: 20px;
+    min-height: 100px;
+    align-items: center;
+  
+  }
+  .articles{
+    width: 100%;
+  }
+  nav{
+    min-height: 100px;
+    margin-bottom: 15px;
+  }
 }
+
+
 
